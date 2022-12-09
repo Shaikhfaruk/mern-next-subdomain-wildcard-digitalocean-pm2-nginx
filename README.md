@@ -125,7 +125,10 @@ Now we'll test Ngnix if it's working fine.
 We can test our server by typing:
 ``` bash
 systemctl status nginx
+```
+
 output should looks like this:
+``` bash
 ● nginx.service - A high performance web server and a reverse proxy server
     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
     Active: active (running) since Mon 2016-04-18 16:14:00 EDT; 4min 2s ago
