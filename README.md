@@ -564,6 +564,16 @@ Go to root folder
 ```bash 
 cd ~
 ```
+## If you want run specific build folder from React App
+- make a `run.sh` file in react app directory where is build folder
+```bash
+nano run.sh
+```
+- now we need to add a link inside `run.sh` file
+```bash
+serve -s build
+```
+
 ## If you have `next.js` app you can easily run app without making `build folder`.
 Go to your app directory and run 
 ```bash
@@ -589,3 +599,11 @@ Monit pm2 server
 ```bash 
 pm2 monit
 ```
+If we want to rename process name just run this CMD
+
+```bash
+pm2 restart id --name newName
+```
+
+
+
